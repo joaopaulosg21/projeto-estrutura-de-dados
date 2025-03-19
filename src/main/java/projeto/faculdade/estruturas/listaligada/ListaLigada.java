@@ -61,14 +61,14 @@ public class ListaLigada<T> {
     }
 
     public boolean contains(T valor) {
-        if(inicio.getValor().equals(valor)) {
+        if (inicio.getValor().equals(valor)) {
             return true;
         }
 
         No<T> atual = inicio.getProximo();
 
-        while(atual != null) {
-            if(atual.getValor().equals(valor)) {
+        while (atual != null) {
+            if (atual.getValor().equals(valor)) {
                 return true;
             }
             atual = atual.getProximo();
@@ -79,6 +79,6 @@ public class ListaLigada<T> {
 
     @Override
     public String toString() {
-        return "ListaLigada [inicio=" + inicio + "]";
+        return "[" + inicio + "]";
     }
 }

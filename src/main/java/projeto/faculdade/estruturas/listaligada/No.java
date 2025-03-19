@@ -28,7 +28,14 @@ public class No<T> {
 
     @Override
     public String toString() {
-        return "No [valor=" + valor + ", proximo=" + proximo + "]";
+        StringBuilder result = new StringBuilder("");
+        No<T> atual = this;
+        while (atual != null) {
+            result.append(atual.valor).append(",");
+            atual = atual.proximo;
+        }
+
+        return result.toString().substring(0,result.length()-1);
     }
 
 }
