@@ -7,26 +7,6 @@ public class ListaLigada<T> {
 
     private No<T> ultimo;
 
-    /*
-     * public void add(T valor) {
-     * No<T> no = new No<>(valor);
-     * 
-     * if (inicio == null) {
-     * inicio = no;
-     * tamanho++;
-     * } else {
-     * No<T> curr = inicio;
-     * 
-     * while (curr.getProximo() != null) {
-     * curr = curr.getProximo();
-     * }
-     * 
-     * curr.setProximo(no);
-     * tamanho++;
-     * }
-     * }
-     */
-
     public void add(T valor) {
         No<T> no = new No<>(valor);
 

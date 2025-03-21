@@ -3,9 +3,7 @@ package projeto.faculdade;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import projeto.faculdade.estruturas.hashmap.Map;
 import projeto.faculdade.estruturas.listaligada.ListaLigada;
@@ -62,7 +60,7 @@ public class App {
         }
 
         br = new BufferedReader(new FileReader("src/main/java/projeto/faculdade/static/entrada.txt"));
-        List<Palavra> indiceRemissivo = new ArrayList<>();
+        ListaLigada<Palavra> indiceRemissivo = new ListaLigada<>();
 
         while (br.ready()) {
             String[] line = br.readLine().split("[,.\\s]+");
