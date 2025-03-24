@@ -5,19 +5,19 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Arrays;
 
-import projeto.faculdade.estruturas.hashmap.Map;
+import projeto.faculdade.estruturas.hashmap.Hash;
 import projeto.faculdade.estruturas.listaligada.ListaLigada;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Map<Character, ListaLigada<Palavra>> indiceGeral = new Map<>();
+        Hash<Character, ListaLigada<Palavra>> indiceGeral = new Hash<>();
 
         BufferedReader br = new BufferedReader(
                 new FileReader(new File("src/main/java/projeto/faculdade/static/texto.txt")));
 
         int contadorLinha = 1;
 
-        Map<Integer, String[]> linhas = new Map<>();
+        Hash<Integer, String[]> linhas = new Hash<>();
 
         while (br.ready()) {
             String line = br.readLine();
