@@ -28,10 +28,10 @@ public class No<T> {
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder(" ");
         No<T> atual = this;
         while (atual != null) {
-            result.append(atual.valor).append(",");
+            result.append(atual.valor).append(" ");
             atual = atual.proximo;
         }
 

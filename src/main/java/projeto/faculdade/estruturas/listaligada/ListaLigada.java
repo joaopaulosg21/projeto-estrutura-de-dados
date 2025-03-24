@@ -59,6 +59,6 @@ public class ListaLigada<T> {
 
     @Override
     public String toString() {
-        return "[" + inicio + "]";
+        return "" + inicio + "\n";
     }
 }
